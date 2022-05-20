@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión | RKA</title>
+    <link rel="icon" href="src/favicon.ico" type="image/x-icon">
+
+    <!-- FONTS -->
+    <!-- Open Sans -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="js/formInicioSesion.js" defer></script>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <a href="index.html" class="text-logo no-responsive"><i class="fas fa-cog"></i> Rekord Autoak</a>
+      <a href="index.html" class="text-logo text-responsive"><i class="fas fa-cog"></i> RKA</a>
+      <div class="content">
+        <a href="index.html" class="links">Inicio</a>
+        <a href="index.html" class="icons"><i class="fas fa-home"></i></a>
+        <a href="services.html" class="links">Servicios</a>
+        <a href="services.html" class="icons"><i class="fas fa-tools"></i></a>
+        <a href="projects.html" class="links">Proyectos</a>
+        <a href="projects.html" class="icons"><i class="fas fa-car"></i></a>
+        <a href="contact.html" class="links">Contacto</a>
+        <a href="contact.html" class="icons"><i class="fas fa-phone"></i></a>
+        <div class="separation"></div>
+        <a href="login.html" class="links active">Iniciar sesión</a>
+        <a href="login.html" class="icons active"><i class="fas fa-sign-in-alt"></i></a>
+        <a href="register.html" class="links">Registrarse</a>
+        <a href="register.html" class="icons"><i class="fas fa-user-plus"></i></a>
+      </div>
+    </nav>
+    <!-- MAIN CONTENT -->
+    <main class="form-main">
+      <!-- FORM -->
+      <form id="login-form">
+        <h1>Iniciar sesión</h1>
+        <div class="horizontal-bar"></div>
+        <!-- Email -->
+        <div class="email-container">
+          <i class="icons fas fa-envelope"></i>
+          <div class="form-input" id="input-correo">
+            <input type="email" id="correo" name="correo" placeholder="Correo electrónico *" autofocus autocomplete="on">
+          </div>
+        </div>
+        <!-- Mensajes de error -->
+          <!-- Correo electrónico -->
+          <div class="mensaje-error" id="error-correo">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>El formato del correo electrónico no es valido.</p>
+          </div>
+        <!-- Contraseña -->
+        <div class="login-password-container">
+          <i class="icons fas fa-key"></i>
+          <div class="form-input" id="input-password">
+            <input type="password" id="password" name="password" placeholder="Contraseña *">
+          </div>
+        </div>
+        <!-- Mensajes de error -->
+          <!-- Contraseña -->
+          <div class="mensaje-error" id="error-password">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Comprueba la contraseña.</p>
+          </div>
+        <!-- Mensaje de error -->
+        <div class="mensaje-error" id="error-formulario">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <p>Correo electrónico o contraseña incorrectos.</p>
+        </div>
+        <!-- Botón -->
+        <button type="submit" id="iniciar-sesion" name="iniciar-sesion">Iniciar sesión</button>
+        <!-- Mensaje de exito -->
+        <div class="mensaje-exito" id="exito-formulario">
+          <i class="fas fa-check-circle"></i>
+          <p>Inicio de sesión de usuario correcto.</p>
+        </div>
+        <!-- Recuperar contraseña -->
+        <p>¿Has olvidado tu contraseña? <a href="#">Recuperala</a></p>
+        <!-- Registrarse -->
+        <div class="horizontal-bar"></div>
+        <p>¿Aún no tienes una cuenta? <a href="register.html">Registrate</a> o inicia sesión con</p>
+        <!-- Otras opciones de inicio de sesión -->
+        <div class="options-container">
+          <!-- Google -->
+          <div class="google-container">
+            <i class="icons fab fa-google"></i>
+            <p>Iniciar sesión con Google</p>
+          </div>
+          <!-- Facebook -->
+          <div class="facebook-container">
+            <i class="icons fab fa-facebook-f"></i>
+            <p>Iniciar sesión con Facebook</p>
+          </div>
+          <!-- Twitter -->
+          <div class="twitter-container">
+            <i class="icons fab fa-twitter"></i>
+            <p>Iniciar sesión con Twitter</p>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

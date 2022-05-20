@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | RKA</title>
+    <link rel="icon" href="src/favicon.ico" type="image/x-icon">
+
+    <!-- FONTS -->
+    <!-- Open Sans -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="js/controlSesion.js" defer></script>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <a href="index.html" class="text-logo no-responsive"><i class="fas fa-cog"></i> Rekord Autoak</a>
+      <a href="index.html" class="text-logo text-responsive"><i class="fas fa-cog"></i> RKA</a>
+      <div class="content">
+        <a href="index.html" class="links active">Inicio</a>
+        <a href="index.html" class="icons active"><i class="fas fa-home"></i></a>
+        <a href="services.html" class="links">Servicios</a>
+        <a href="services.html" class="icons"><i class="fas fa-tools"></i></a>
+        <a href="projects.html" class="links">Proyectos</a>
+        <a href="projects.html" class="icons"><i class="fas fa-car"></i></a>
+        <a href="contact.html" class="links">Contacto</a>
+        <a href="contact.html" class="icons"><i class="fas fa-phone"></i></a>
+        <div class="separation"></div>
+        <div class="sesion" id="offline">
+          <a href="login.html" class="links">Iniciar sesión</a>
+          <a href="login.html" class="icons"><i class="fas fa-sign-in-alt"></i></a>
+          <a href="register.html" class="links">Registrarse</a>
+          <a href="register.html" class="icons"><i class="fas fa-user-plus"></i></a>
+        </div>
+        <div class="sesion" id="online">
+          <button id="btnCerrarSesion" class="links">Cerrar sesión</button>
+          <button id="btnCerrarSesionIcon" class="icons"><i class="fa-solid fa-user-xmark"></i></button>
+          <button id="btnVerCuentas" class="links">Ver cuentas</button>
+          <button id="btnVerCuentasIcon" class="icons"><i class="fa-solid fa-users-gear"></i></button>
+          <button id="btnEliminarCuenta" class="links">Eliminar cuentas</button>
+          <button id="btnEliminarCuentaIcon" class="icons"><i class="fa-solid fa-user-slash"></i></i></button>
+        </div>
+      </div>
+    </nav>
+    <!-- MAIN CONTENT -->
+    <!-- Background image -->
+    <header class="index-header">
+      <img class="normal-bg" src="src/index/background.jpg" alt="">
+      <img class="responsive-bg" src="src/index/background-responsive.jpg" alt="">
+      <div class="img-logos">
+        <img class="img-logo normal-logo" src="src/index/normal-logo.png" alt="Rekord Autoak">
+        <img class="img-logo responsive-logo" src="src/index/responsive-logo.png" alt="Rekord Autoak">
+      </div>
+    </header>
+    <main class="index-main">
+      <!-- RE-UP -->
+      <a href="#"><i class="re-up fas fa-angle-double-up"></i></a>
+      <!-- Novedades -->
+      <h1>NOVEDADES</h1>
+      <div class="news">
+        <img src="src/index/tunning.jpg">
+        <div class="text">
+          <h3>INTRODUCIMOS EL TUNNING</h3>
+          <p>Vamos a introducir el tunning en nuestros talleres, el cual consiste en la personalización de un vehículo motorizado a través de diferentes modificaciones de la mecánica para un mayor rendimiento y también aplicado popularmente a cambios exteriores de la carrocería e incluso interiores de la cabina.</p>
+        </div>
+      </div>
+      <div class="news">
+        <div class="text no-responsive-text">
+          <h3>TENEMOS NUEVO PROVEEDOR</h3>
+          <p>La empresa de Monroe ha decidido apoyarnos, patrocinandonos y proveyéndonos. Monroe hace los mejores amortiguadores de todo el mercado, con garantía incluida y con una calidad excepcional. Monroe consigue su calidad y fiabilidad por los materiales que utilizan.</p>
+        </div>
+        <img src="src/index/sponsor.jpg">
+        <div class="text responsive-text">
+          <h4>TENEMOS NUEVO PROVEEDOR</h4>
+          <p>La empresa de Monroe ha decidido apoyarnos, patrocinandonos y proveyéndonos. Monroe hace los mejores amortiguadores de todo el mercado, con garantía incluida y con una calidad excepcional. Monroe consigue su calidad y fiabilidad por los materiales que utilizan.</p>
+        </div>
+      </div>
+      <div class="news">
+        <img src="src/index/neumaticos.jpg">
+        <div class="text">
+          <h3>NUEVOS NEUMÁTICOS</h3>
+          <li>Neumáticos de verano</li>
+          <li>Neumáticos de invierno</li>
+          <li>Neumáticos all-season</li>
+          <li>Neumáticos con tecnología run flat</li>
+          <li>Neumáticos de 4x4</li>
+        </div>
+      </div>
+      <!-- Opiniones de los usuarios -->
+      <h1>Opiniones de los usuarios</h1>
+      <div class="user-opinions">
+        <!-- Usuario 1 -->
+        <div class="user">
+          <img src="src/index/user1.png" alt="">
+          <h3>Juan Calvo Peinado</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <div class="comments">
+            <p>“Nunca me han atendido tan bien como en este taller, son totalmente profesionales.”</p>
+          </div>
+        </div>
+        <!-- Usuario 2 -->
+        <div class="user">
+          <img src="src/index/user2.png" alt="">
+          <h3>Rosa Campos Prado</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="comments">
+            <p>“Muy buen servicio. Si vuelvo a tener algún problema, estaré encantada de volver.”</p>
+          </div>
+        </div>
+        <!-- Usuario 3 -->
+        <div class="user">
+          <img src="src/index/user3.png" alt="">
+          <h3>Manu García Pereira</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <div class="comments">
+            <p>“Las piezas que me instalaron son las mejores que he visto.”</p>
+          </div>
+        </div>
+      </div>
+    </main>    
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div>
+          <p><i class="icons fas fa-map-marked-alt"></i>Calle Doctor Ornilla 2 - 48004 - Bilbao - Vizcaya</p>
+          <p><i class="icons fas fa-phone"></i>944 12 57 12</p>
+          <p><i class="icons fas fa-mobile-alt"></i> 601 23 45 67</p>
+          <p><i class="icons fas fa-envelope"></i></i>clientes@rka.com</p>
+        </div>
+        <div class="footer-bar"></div>
+        <div>
+          <a href="pdf/politica-reciclaje.pdf">Política de reciclaje</a>
+          <p>Política de privacidad</p>
+          <p>Términos y condiciones</p>
+          <p>Aviso legal</p>
+        </div>
+        <div class="footer-bar"></div>
+        <div>
+          <a href="index.html" class="links active">Inicio</a>
+          <a href="services.html" class="links">Servicios</a>
+          <a href="projects.html" class="links">Proyectos</a>
+          <a href="contact.html" class="links">Contacto</a>
+          <a href="login.html" class="links">Iniciar sesión</a>
+          <a href="register.html" class="links">Registrarse</a>
+        </div>
+        <div class="footer-bar"></div>
+        <div class="social-media">
+          <a href="https://es-es.facebook.com/" class="media-icons facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/?hl=es" class="media-icons instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/?lang=es" class="media-icons twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="sub-footer">
+        <div class="copyrigth">
+          <p>&copy; 2022 Rekord Autoak | Todos los derechos reservados</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

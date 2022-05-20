@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | RKA</title>
+    <link rel="icon" href="src/favicon.ico" type="image/x-icon">
+
+    <!-- FONTS -->
+    <!-- Open Sans -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="js/formContacto.js" defer></script>
+    <script src="js/controlSesion.js" defer></script>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body onload="controlSesion()">
+    <!-- NAVBAR -->
+    <nav>
+      <a href="index.html" class="text-logo no-responsive"><i class="fas fa-cog"></i> Rekord Autoak</a>
+      <a href="index.html" class="text-logo text-responsive"><i class="fas fa-cog"></i> RKA</a>
+      <div class="content">
+        <a href="index.html" class="links">Inicio</a>
+        <a href="index.html" class="icons"><i class="fas fa-home"></i></a>
+        <a href="services.html" class="links">Servicios</a>
+        <a href="services.html" class="icons"><i class="fas fa-tools"></i></a>
+        <a href="projects.html" class="links">Proyectos</a>
+        <a href="projects.html" class="icons"><i class="fas fa-car"></i></a>
+        <a href="contact.html" class="links active">Contacto</a>
+        <a href="contact.html" class="icons active"><i class="fas fa-phone"></i></a>
+        <div class="separation"></div>
+        <div class="sesion" id="offline">
+          <a href="login.html" class="links">Iniciar sesión</a>
+          <a href="login.html" class="icons"><i class="fas fa-sign-in-alt"></i></a>
+          <a href="register.html" class="links">Registrarse</a>
+          <a href="register.html" class="icons"><i class="fas fa-user-plus"></i></a>
+        </div>
+        <div class="sesion" id="online">
+          <button id="btnCerrarSesion" class="links">Cerrar sesión</button>
+          <button id="btnCerrarSesionIcon" class="icons"><i class="fa-solid fa-user-xmark"></i></button>
+          <button id="btnVerCuentas" class="links">Ver cuentas</button>
+          <button id="btnVerCuentasIcon" class="icons"><i class="fa-solid fa-users-gear"></i></button>
+          <button id="btnEliminarCuenta" class="links">Eliminar cuentas</button>
+          <button id="btnEliminarCuentaIcon" class="icons"><i class="fa-solid fa-user-slash"></i></i></button>
+        </div>
+      </div>
+    </nav>
+    <!-- MAIN CONTENT -->
+    <header>
+      <h1>CONTACTA CON NOSOTROS</h1>
+      <h2>Si tienes alguna duda o algun problema con tu vehículo, no dudes en ponerte en contacto con nosotros a traves del formulario o viniendo a nuestro taller.</h2>
+    </header>
+    <main class="contact-main">
+        <!-- Horario -->
+        <table class="normal-table">
+          <!-- Primera fila -->
+          <tr>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+            <th>Sabado</th>
+            <th>Domingo</th>
+          </tr>
+          <!-- Segunda fila -->
+          <tr>
+            <td>9:00 - 13:00</td>
+            <td>9:00 - 13:00</td>
+            <td>9:00 - 13:00</td>
+            <td>9:00 - 13:00</td>
+            <td>9:00 - 13:00</td>
+            <td>Cerrado</td>
+            <td>Cerrado</td>
+          </tr>
+          <!-- Tercera fila -->
+          <tr>
+            <td>15:00 - 19:00</td>
+            <td>15:00 - 19:00</td>
+            <td>15:00 - 19:00</td>
+            <td>15:00 - 19:00</td>
+            <td>15:00 - 19:00</td>
+            <td>Cerrado</td>
+            <td>Cerrado</td>
+          </tr>
+        </table>
+        <!-- Horario responsive -->
+        <table class="responsive-table">
+          <!-- Lunes -->
+          <tr>
+            <th>Lunes</th>
+            <td>9:00 - 13:00</td>
+            <td>15:00 - 19:00</td>
+          </tr>
+          <!-- Martes -->
+          <tr>
+            <th>Martes</th>
+            <td>9:00 - 13:00</td>
+            <td>15:00 - 19:00</td>
+          </tr>
+          <!-- Miercoles -->
+          <tr>
+            <th>Miercoles</th>
+            <td>9:00 - 13:00</td>
+            <td>15:00 - 19:00</td>
+          </tr>
+          <!-- Jueves -->
+          <tr>
+            <th>Jueves</th>
+            <td>9:00 - 13:00</td>
+            <td>15:00 - 19:00</td>
+          </tr>
+          <!-- Viernes -->
+          <tr>
+            <th>Viernes</th>
+            <td>9:00 - 13:00</td>
+            <td>15:00 - 19:00</td>
+          </tr>
+          <!-- Sabado -->
+          <tr>
+            <th>Sabado</th>
+            <td>Cerrado</td>
+            <td>Cerrado</td>
+          </tr>
+          <!-- Domingo -->
+          <tr>
+            <th>Domingo</th>
+            <td>Cerrado</td>
+            <td>Cerrado</td>
+          </tr>
+        </table>
+      <!-- Fomulario de contacto y mapa -->
+      <div class="form-map-container">
+        <!-- Mapa -->
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2905.699182971125!2d-2.9049657846690087!3d43.25772598593129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4e4fac87437727%3A0x364f27e82def0130!2sCIFP%20Txurdinaga%20LHII!5e0!3m2!1ses!2ses!4v1634883275826!5m2!1ses!2ses" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <!-- Formulario de contacto -->
+        <form id="contact-form">
+          <div class="form-header">
+            <h1>¿Qué necesitas?</h1>
+          </div>
+          <div class="horizontal-bar"></div>
+          <!-- Nombre y apellidos -->
+          <div class="fullname-container">
+            <i class="icons fas fa-user"></i>
+            <div class="fullname-group">
+              <!-- Nombre -->
+              <div class="form-input" id="input-nombre">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre *" autofocus autocomplete="on">
+              </div>
+              <!-- Apellidos -->
+              <div class="form-input" id="input-apellidos">
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos *" autocomplete="on">
+              </div>
+            </div>
+          </div>
+          <!-- Mensajes de error -->
+            <!-- Nombre -->
+            <div class="mensaje-error" id="error-nombre">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p>El nombre debe comenzar por una letra mayúscula y solo puede contener letras.</p>
+            </div>
+            <!-- Apellidos -->
+            <div class="mensaje-error" id="error-apellidos">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p>Los apellidos solo pueden contener letras.</p>
+            </div>
+          <!-- Email -->
+          <div class="email-container">
+            <i class="icons fas fa-envelope"></i>
+            <div class="form-input" id="input-correo">
+              <input type="email" id="correo" name="correo" placeholder="Correo electrónico *" autocomplete="on">
+            </div>
+          </div>
+          <!-- Mensajes de error -->
+            <!-- Correo electrónico -->
+            <div class="mensaje-error" id="error-correo">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p>El formato del correo electrónico no es valido.</p>
+            </div>
+          <!-- Tipo de mensaje -->
+          <div class="select-container">
+            <i class="icons fas fa-question"></i>
+            <div class="form-input" id="">
+              <select class="opciones" id="opciones">
+                <option value="consulta">Consulta</option>
+                <option value="reparacion">Reparación</option>
+                <option value="opinion">Opinión</option>
+                <option value="otro">Otro...</option>
+              </select>
+            </div>
+          </div>
+          <!-- Caja de texto -->
+          <div class="message-container">
+            <div class="form-input" id="input-mensaje">
+              <textarea id="mensaje" name="mensaje" placeholder="Escribe aquí tu mensaje (Máximo 250 caracteres)."
+              required autocomplete="off" maxlength="250"></textarea>
+            </div>
+          </div>
+          <!-- Mensajes de error -->
+            <!-- Mensaje -->
+            <div class="mensaje-error" id="error-mensaje">
+              <i class="fa-solid fa-circle-exclamation"></i>
+              <p>Revisa el mensaje. Debe tener un máximo de 500 caracteres.</p>
+            </div>
+           <!-- Mensaje de error -->
+          <div class="mensaje-error" id="error-formulario">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Completa el formulario correctamente.</p>
+          </div>
+          <div class="mensaje-error" id="error-usuario">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            <p>Los datos del usuario introducido no coinciden con los datos del usuario que ha iniciado sesión.</p>
+          </div>
+          <!-- Mensaje de exito -->
+          <div class="mensaje-exito" id="exito-formulario">
+            <i class="fas fa-check-circle"></i>
+            <p>Mensaje enviado correctamente.</p>
+          </div>
+          <!-- Botón -->
+          <button type="submit" id="enviar" name="enviar">Enviar</button>
+        </form>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div>
+          <p><i class="icons fas fa-map-marked-alt"></i>Calle Doctor Ornilla 2 - 48004 - Bilbao - Vizcaya</p>
+          <p><i class="icons fas fa-phone"></i>944 12 57 12</p>
+          <p><i class="icons fas fa-mobile-alt"></i> 601 23 45 67</p>
+          <p><i class="icons fas fa-envelope"></i></i>clientes@rka.com</p>
+        </div>
+        <div class="footer-bar"></div>
+        <div>
+          <a href="pdf/politica-reciclaje.pdf">Política de reciclaje</a>
+          <p>Política de privacidad</p>
+          <p>Términos y condiciones</p>
+          <p>Aviso legal</p>
+        </div>
+        <div class="footer-bar"></div>
+        <div>
+          <a href="index.html" class="links active">Inicio</a>
+          <a href="services.html" class="links">Servicios</a>
+          <a href="projects.html" class="links">Proyectos</a>
+          <a href="contact.html" class="links">Contacto</a>
+          <a href="login.html" class="links">Iniciar sesión</a>
+          <a href="register.html" class="links">Registrarse</a>
+        </div>
+        <div class="footer-bar"></div>
+        <div class="social-media">
+          <a href="https://es-es.facebook.com/" class="media-icons facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/?hl=es" class="media-icons instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/?lang=es" class="media-icons twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <!-- RE-UP -->
+      <a href="#"><i class="re-up fas fa-angle-double-up"></i></a>
+      <div class="sub-footer">
+        <div class="copyrigth">
+          <p>&copy; 2022 Rekord Autoak | Todos los derechos reservados</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

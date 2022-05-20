@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+  <html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | RKA</title>
+    <link rel="icon" href="src/favicon.ico" type="image/x-icon">
+
+    <!-- FONTS -->
+    <!-- Open Sans -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
+    <!-- Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- JAVASCRIPT -->
+    <script src="js/controlSesion.js" defer></script>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body onload="controlSesion()">
+    <!-- NAVBAR -->
+    <nav>
+      <a href="index.html" class="text-logo no-responsive"><i class="fas fa-cog"></i> Rekord Autoak</a>
+      <a href="index.html" class="text-logo text-responsive"><i class="fas fa-cog"></i> RKA</a>
+      <div class="content">
+        <a href="index.html" class="links">Inicio</a>
+        <a href="index.html" class="icons"><i class="fas fa-home"></i></a>
+        <a href="services.html" class="links">Servicios</a>
+        <a href="services.html" class="icons"><i class="fas fa-tools"></i></a>
+        <a href="projects.html" class="links">Proyectos</a>
+        <a href="projects.html" class="icons"><i class="fas fa-car"></i></a>
+        <a href="contact.html" class="links active">Contacto</a>
+        <a href="contact.html" class="icons active"><i class="fas fa-phone"></i></a>
+        <div class="separation"></div>
+        <div class="sesion" id="offline">
+          <a href="login.html" class="links">Iniciar sesión</a>
+          <a href="login.html" class="icons"><i class="fas fa-sign-in-alt"></i></a>
+          <a href="register.html" class="links">Registrarse</a>
+          <a href="register.html" class="icons"><i class="fas fa-user-plus"></i></a>
+        </div>
+        <div class="sesion" id="online">
+          <button id="btnCerrarSesion" class="links">Cerrar sesión</button>
+          <button id="btnCerrarSesionIcon" class="icons"><i class="fa-solid fa-user-xmark"></i></button>
+          <button id="btnVerCuentas" class="links">Ver cuentas</button>
+          <button id="btnVerCuentasIcon" class="icons"><i class="fa-solid fa-users-gear"></i></button>
+          <button id="btnEliminarCuenta" class="links">Eliminar cuentas</button>
+          <button id="btnEliminarCuentaIcon" class="icons"><i class="fa-solid fa-user-slash"></i></i></button>
+        </div>
+      </div>
+    </nav>
+    <!-- MAIN CONTENT -->
+    <header>
+      <h1>¿EN QUÉ PODEMOS AYUDARTE?</h1>
+      <h2>En Rekord Autoak somos especialistas en la reparación y el mantenimiento de todo tipo de vehículos. Aquí tienes algunos de los servicios que ofrecemos.</h2>
+    </header>
+    <main class="services-main">
+      <div class="grid-container">
+        <!-- ACEITE -->
+        <div class="grid-item">
+          <img class="grid-item-img" src="src/services/aceite.jpg">
+          <div class="services-overlay">
+            <div class="overlay-container">
+              <img src="src/services/aceite.png">
+              <h4>Cambio de aceite y filtros</h4>
+              <p>Se recomienda realizarlo cada 15.000 o 30.000 km dependiendo del vehículo y del tipo de aceite. Filtro de aceite, gasoil, habitáculo y aire.</p>
+            </div>
+          </div>
+        </div>
+        <!-- CARBURACION -->
+        <div class="grid-item">
+          <img class="grid-item-img" src="src/services/carburador.jpg">
+          <div class="services-overlay">
+            <div class="overlay-container">
+              <img src="src/services/carburador.png">
+              <h4>Carburación e inyección</h4>
+              <p>Para que el motor funcione más económicamente y obtenga la mayor potencia de salida, es importante que la gasolina y el aire estén mezclados en las proporciones óptimas.</p>
+            </div>
+          </div>
+        </div>
+        <!-- AMORTIGUACION -->
+        <div class="grid-item">
+          <img class="grid-item-img" src="src/services/amortiguacion.jpg">
+          <div class="services-overlay">
+            <div class="overlay-container">
+              <img src="src/services/amortiguacion.png">
+              <h4>Amortiguación</h4>
+              <p>Verificamos el estado de la suspensión del vehículo y/o sustituimos sus amortiguadores para un agarre óptimo en carretera.</p>
+            </div>
+          </div>
+        </div>
+        <!-- NEUMATICOS -->
+        <div class="grid-item">
+          <img class="grid-item-img" src="src/services/neumaticos.jpg">
+          <div class="services-overlay">
+            <div class="overlay-container">
+              <img src="src/services/neumaticos.png">
+              <h4>Neumáticos</h4>
+              <p>Verificación, reparación de pinchazos, sustitución y equilibrado de neumáticos.</p>
+            </div>
+          </div>
+        </div>
+        <!-- FRENOS -->
+        <div class="grid-item">
+          <img class="grid-item-img" src="src/services/frenos.jpg">
+          <div class="services-overlay">
+            <div class="overlay-container">
+              <img src="src/services/frenos.png">
+              <h4>Discos y pastillas de freno</h4>
+              <p>Nos aseguramos que discos y pastillas de freno se encuentran en correctas condiciones o si necesitan sustituirse para ofrecer la máxima seguridad durante la conducción.</p>
+            </div>
+          </div>
+        </div>
+        <!-- EMBRAGUE -->
+        <div class="grid-item">
+          <img class="grid-item-img" src="src/services/embrague.jpg">
+          <div class="services-overlay">
+            <div class="overlay-container">
+              <img src="src/services/embrague.png">
+              <h4>Embrague</h4>
+              <p>Las roturas inesperadas se pueden evitar sustituyendo el embrague cuando al cambiar de marchas se notan vibraciones y un aumento inesperado en las revoluciones.</p>
+            </div>
+          </div>
+        </div>
+        <!-- DISTRIBUCION -->
+        <div class="grid-item">
+          <img class="grid-item-img" src="src/services/distribucion.jpg">
+          <div class="services-overlay">
+            <div class="overlay-container">
+              <img src="src/services/distribucion.png">
+              <h4>Distribución</h4>
+              <p>Sustitución de correas de distribución y de servicios. Cada coche tiene unas recomendaciones de sustitución diferentes en función del modelo. Preguntanos sin compromiso.</p>
+            </div>
+          </div>
+        </div>
+        <!-- TRANSMISION -->
+        <div class="grid-item">
+          <img class="grid-item-img" src="src/services/transmision.jpg">
+          <div class="services-overlay">
+            <div class="overlay-container">
+              <img src="src/services/transmision.png">
+              <h4>Transmisión</h4>
+              <p>Reparación y mantenimientos  de transmisiones automáticas, manuales y diferenciales.</p>
+            </div>
+          </div>
+        </div>
+        <!-- DIRECCION -->
+        <div class="grid-item">
+          <img class="grid-item-img" src="src/services/direccion.jpg">
+          <div class="services-overlay">
+            <div class="overlay-container">
+              <img src="src/services/direccion.png">
+              <h4>Alineado de dirección</h4>
+              <p>Mantener la dirección correctamente alineada implica un correcto agarre del vehículo y desgaste de neumáticos.</p>
+            </div>
+          </div>
+        </div>
+        <!-- TURBOS -->
+        <div class="grid-item">
+          <img class="grid-item-img" src="src/services/turbo.jpg">
+          <div class="services-overlay">
+            <div class="overlay-container">
+              <img src="src/services/turbo.png">
+              <h4>Turbos</h4>
+              <p>Cuando notas un exceso de humo blanco por el tubo de escape o falta de potencia en el vehículo puede ser un problema del turbo. Nosotros verficamos, reparamos y/o sustituimos el turbo en caso de que sea necesario.</p>
+            </div>
+          </div>
+        </div>
+        <!-- REVISION GENERAL -->
+        <div class="grid-item">
+          <img class="grid-item-img" src="src/services/elevador.jpg">
+          <div class="services-overlay">
+            <div class="overlay-container">
+              <img src="src/services/elevador.png">
+              <h4>Revisión general</h4>
+              <p>Discos y pastillas de freno, neumáticos, holguras, escape, luces, revisión de niveles de líquidos… Comprobamos que los aspectos generales del vehículo estén en buenas condiciones.</p>
+            </div>
+          </div>
+        </div>
+        <!-- COMPETICION -->
+        <div class="grid-item">
+          <img class="grid-item-img" src="src/services/competicion.jpg">
+          <div class="services-overlay">
+            <div class="overlay-container">
+              <img src="src/services/competicion.png">
+              <h4>Competición</h4>
+              <p>Instalación y mantenimiento de equipos de competición.</p>
+              <script >
+                var sonido = new Audio();
+                sonido.src="src/services/sonido.mp3";
+              </script>
+              <button class="boton-sonido" id="enviar" onmousedown="src.play()">Así suenan nuestros motores</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sponsors -->
+      <h1>SPONSORS</h1>
+      <h2>Estas son algunas de las marcas que ya confian en nuestro trabajo.</h2>
+      <div class="sponsors-container">
+        <div>
+          <a href="https://www.sparco-official.com/es/"><img class="sparco-logo" src="src/services/sparco-logo.svg" alt="Sparco"></a>
+          <a href="https://www.pirelli.com/global/es-es/homepage"><img class="pirelli-logo" src="src/services/pirelli-logo.svg" alt="Pirelli"></a>
+          <a href="https://www.castrol.com/es_es/spain/home.html"><img class="castrol-logo" src="src/services/castrol-logo.svg" alt="Castrol"></a>
+        </div>
+        <div>
+          <a href="https://www.bbs.com/en/home"><img class="bbs-logo" src="src/services/bbs-logo.svg" alt="BBS"></a>
+          <a href="https://eu.monroe.com/es-es/"><img class="monroe-logo" src="src/services/monroe-logo.svg" alt="Monroe"></a>
+          <a href="https://www.brembo.com/es/"><img class="brembo-logo" src="src/services/brembo-logo.svg" alt="Brembo"></a>
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div>
+          <p><i class="icons fas fa-map-marked-alt"></i>Calle Doctor Ornilla 2 - 48004 - Bilbao - Vizcaya</p>
+          <p><i class="icons fas fa-phone"></i>944 12 57 12</p>
+          <p><i class="icons fas fa-mobile-alt"></i> 601 23 45 67</p>
+          <p><i class="icons fas fa-envelope"></i></i>clientes@rka.com</p>
+        </div>
+        <div class="footer-bar"></div>
+        <div>
+          <a href="pdf/politica-reciclaje.pdf">Política de reciclaje</a>
+          <p>Política de privacidad</p>
+          <p>Términos y condiciones</p>
+          <p>Aviso legal</p>
+        </div>
+        <div class="footer-bar"></div>
+        <div>
+          <a href="index.html" class="links active">Inicio</a>
+          <a href="services.html" class="links">Servicios</a>
+          <a href="projects.html" class="links">Proyectos</a>
+          <a href="contact.html" class="links">Contacto</a>
+          <a href="login.html" class="links">Iniciar sesión</a>
+          <a href="register.html" class="links">Registrarse</a>
+        </div>
+        <div class="footer-bar"></div>
+        <div class="social-media">
+          <a href="https://es-es.facebook.com/" class="media-icons facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/?hl=es" class="media-icons instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/?lang=es" class="media-icons twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <!-- RE-UP -->
+      <a href="#"><i class="re-up fas fa-angle-double-up"></i></a>
+      <div class="sub-footer">
+        <div class="copyrigth">
+          <p>&copy; 2022 Rekord Autoak | Todos los derechos reservados</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
